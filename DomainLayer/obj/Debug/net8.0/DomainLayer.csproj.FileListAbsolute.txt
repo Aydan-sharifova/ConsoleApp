@@ -1,0 +1,15 @@
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.AssemblyInfoInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.AssemblyInfo.cs
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.csproj.CoreCompileInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.sourcelink.json
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer.deps.json
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/refint/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/ref/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer.runtimeconfig.json
+/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.genruntimeconfig.cache

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Em41LwXwA1Q=",
+  "dgSpecHash": "0VlCQ6GA7fs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Classtime.PC_6_213_6\\Desktop\\Task\\ConsoleAppCourse\\ConsoleAppCourse.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/ConsoleAppCourse.csproj",
+  "expectedPackageFiles": [
+    "/Users/aydansrifova/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/aydansrifova/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/aydansrifova/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.25/microsoft.netcore.app.host.osx-arm64.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

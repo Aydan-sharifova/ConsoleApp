@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using DomainLayer.Entities;
 
 namespace ServiceLayer.Services.Interfaces
 {
-   public interface IGroupService
+    public interface IGroupService
     {
-        Group Create(Group group);
-        Group GetById(int id);
-        List<Group> GetAll(Predicate<Group> predicate);
-        Group Update(int id,Group group);
+        Groups Create(Groups group);
+        Groups Update(int id, Groups group);
         void Delete(int id);
+        Groups GetById(int id);
+        List<Groups> GetAll(Predicate<Groups> predicate);
+        List<Groups> GetAllByTeacher(string teacher);
+        List<Groups> GetAllByRoom(string room);
     }
 }

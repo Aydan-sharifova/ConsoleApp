@@ -2,60 +2,72 @@
 using RepositoryLayer.Data;
 using RepositoryLayer.Repositories.Implementations;
 using ServiceLayer.Services.Interfaces;
-using System.Text.RegularExpressions;
 
 namespace ServiceLayer.Services.Implementations
 {
     public class GroupService : IGroupService
     {
-      private GroupRepository _groupRepository;
-      private  int _count = 1;
+        private readonly GroupRepository _groupRepository;
+        private int _count;
+
+        public GroupService()
+        {
+            _groupRepository = new GroupRepository();
+            _count = AppDbContext<Groups>.datas.Count == 0
+                ? 1
+                : AppDbContext<Groups>.datas.Max(m => m.Id) + 1;
+        }
+
         public Groups Create(Groups group)
         {
+            ArgumentNullException.ThrowIfNull(group);
+
             group.Id = _count;
             _groupRepository.Create(group);
             _count++;
             return group;
         }
 
-        public Group Create(Group group)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            Groups data = _groupRepository.GetById(id);
+            _groupRepository.Delete(data);
         }
 
         public List<Groups> GetAll(Predicate<Groups> predicate)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<Group> GetAll(Predicate<Group> predicate)
-        {
-            throw new NotImplementedException();
+            return _groupRepository.GetAll(predicate);
         }
 
         public Groups GetById(int id)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetById(id);
         }
 
         public Groups Update(int id, Groups group)
         {
-            throw new NotImplementedException();
+            ArgumentNullException.ThrowIfNull(group);
+
+            Groups dbGroup = _groupRepository.GetById(id);
+
+            dbGroup.Name = group.Name;
+            dbGroup.Teacher = group.Teacher;
+            dbGroup.Room = group.Room;
+
+            _groupRepository.Update(dbGroup);
+            return dbGroup;
         }
 
-        public Group Update(int id, Group group)
+        public List<Groups> GetAllByTeacher(string teacher)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAll(m =>
+                string.Equals(m.Teacher, teacher, StringComparison.OrdinalIgnoreCase));
         }
 
-        Group IGroupService.GetById(int id)
+        public List<Groups> GetAllByRoom(string room)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAll(m =>
+                string.Equals(m.Room, room, StringComparison.OrdinalIgnoreCase));
         }
     }
 }
