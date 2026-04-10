@@ -1,36 +1,42 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RepositoryLayer.Exceptions;
+using RepositoryLayer.Data;
 
 namespace RepositoryLayer.Repositories.Implementations
 {
-    public class GroupRepository : IRepository<Group>
+    public class GroupRepository : IRepository<Groups>
     {
-        public void Create(Group data)
+        public void Create(Groups data)
+        {
+            try
+            {
+                if (data is null) throw new NotFoundException("Data isn't found");
+
+                AppDbContext<Groups>.datas.Add(data);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void Delete(Groups data)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Group data)
+        public List<Groups> GetAll(Predicate<Groups> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public List<Group> GetAll(Predicate<Group> predicate)
+        public Groups GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Group GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Group data)
+        public void Update(Groups data)
         {
             throw new NotImplementedException();
         }

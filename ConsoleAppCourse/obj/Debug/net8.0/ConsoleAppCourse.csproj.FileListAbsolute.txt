@@ -1,0 +1,15 @@
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\bin\Debug\net8.0\ConsoleAppCourse.exe
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\bin\Debug\net8.0\ConsoleAppCourse.deps.json
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\bin\Debug\net8.0\ConsoleAppCourse.runtimeconfig.json
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\bin\Debug\net8.0\ConsoleAppCourse.dll
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\bin\Debug\net8.0\ConsoleAppCourse.pdb
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.AssemblyInfoInputs.cache
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.AssemblyInfo.cs
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.csproj.CoreCompileInputs.cache
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.sourcelink.json
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.dll
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\refint\ConsoleAppCourse.dll
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.pdb
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ConsoleAppCourse.genruntimeconfig.cache
+C:\Users\Classtime.PC_6_213_6\Desktop\Task\ConsoleAppCourse\obj\Debug\net8.0\ref\ConsoleAppCourse.dll
