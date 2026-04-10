@@ -46,7 +46,6 @@ namespace ServiceLayer.Services.Implementations
 
         public Groups Update(int id, Groups group)
         {
-            ArgumentNullException.ThrowIfNull(group);
 
             Groups dbGroup = _groupRepository.GetById(id);
 

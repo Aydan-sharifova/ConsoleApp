@@ -1,0 +1,15 @@
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/bin/Debug/net7.0/RepositoryLayer.deps.json
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/bin/Debug/net7.0/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/bin/Debug/net7.0/RepositoryLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/bin/Debug/net7.0/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/bin/Debug/net7.0/DomainLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.csproj.AssemblyReference.cache
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.AssemblyInfoInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.AssemblyInfo.cs
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.csproj.CoreCompileInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/refint/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/ref/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.csproj.CopyComplete

@@ -1,0 +1,17 @@
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/ServiceLayer.deps.json
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/ServiceLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/ServiceLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/DomainLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net7.0/RepositoryLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.csproj.AssemblyReference.cache
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.AssemblyInfoInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.AssemblyInfo.cs
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.csproj.CoreCompileInputs.cache
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/refint/ServiceLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ref/ServiceLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net7.0/ServiceLayer.csproj.CopyComplete

@@ -10,6 +10,3 @@
 /Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/refint/DomainLayer.dll
 /Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/ref/DomainLayer.dll
-/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer
-/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/bin/Debug/net8.0/DomainLayer.runtimeconfig.json
-/Users/aydansrifova/Desktop/ConsoleApp/DomainLayer/obj/Debug/net8.0/DomainLayer.genruntimeconfig.cache

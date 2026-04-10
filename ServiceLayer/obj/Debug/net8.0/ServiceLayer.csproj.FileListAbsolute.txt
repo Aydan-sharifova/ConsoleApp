@@ -1,10 +1,8 @@
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ServiceLayer.deps.json
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ServiceLayer.dll
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ServiceLayer.pdb
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ConsoleAppCourse.dll
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/DomainLayer.dll
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/RepositoryLayer.dll
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ConsoleAppCourse.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/DomainLayer.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/RepositoryLayer.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net8.0/ServiceLayer.csproj.AssemblyReference.cache
@@ -18,15 +16,3 @@
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net8.0/refint/ServiceLayer.dll
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net8.0/ServiceLayer.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net8.0/ref/ServiceLayer.dll
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ConsoleAppCourse.deps.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ConsoleAppCourse.runtimeconfig.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ConsoleAppCourse
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/DomainLayer.deps.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/DomainLayer.runtimeconfig.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/DomainLayer
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/RepositoryLayer.deps.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/RepositoryLayer.runtimeconfig.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/RepositoryLayer
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ServiceLayer
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/bin/Debug/net8.0/ServiceLayer.runtimeconfig.json
-/Users/aydansrifova/Desktop/ConsoleApp/ServiceLayer/obj/Debug/net8.0/ServiceLayer.genruntimeconfig.cache

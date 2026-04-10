@@ -28,3 +28,11 @@ C:/Users/Classtime.PC_6_213_6/Desktop/Task/ConsoleAppCourse/obj/Debug/net8.0/ref
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/ConsoleAppCourse
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/ConsoleAppCourse.runtimeconfig.json
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net8.0/ConsoleAppCourse.genruntimeconfig.cache
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/DomainLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/RepositoryLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/ServiceLayer.dll
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/DomainLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/ServiceLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/bin/Debug/net8.0/RepositoryLayer.pdb
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net8.0/ConsoleAppCourse.csproj.AssemblyReference.cache
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net8.0/ConsoleA.B20B7975.Up2Date

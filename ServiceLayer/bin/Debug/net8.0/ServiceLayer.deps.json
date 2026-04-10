@@ -8,20 +8,11 @@
     ".NETCoreApp,Version=v8.0": {
       "ServiceLayer/1.0.0": {
         "dependencies": {
-          "ConsoleAppCourse": "1.0.0",
           "DomainLayer": "1.0.0",
           "RepositoryLayer": "1.0.0"
         },
         "runtime": {
           "ServiceLayer.dll": {}
-        }
-      },
-      "ConsoleAppCourse/1.0.0": {
-        "runtime": {
-          "ConsoleAppCourse.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "DomainLayer/1.0.0": {
@@ -34,7 +25,6 @@
       },
       "RepositoryLayer/1.0.0": {
         "dependencies": {
-          "ConsoleAppCourse": "1.0.0",
           "DomainLayer": "1.0.0"
         },
         "runtime": {
@@ -48,11 +38,6 @@
   },
   "libraries": {
     "ServiceLayer/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ConsoleAppCourse/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
