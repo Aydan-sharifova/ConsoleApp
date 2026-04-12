@@ -12,4 +12,5 @@
 /Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/refint/RepositoryLayer.dll
 /Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/ref/RepositoryLayer.dll
-/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.csproj.CopyComplete
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/RepositoryLayer.sourcelink.json
+/Users/aydansrifova/Desktop/ConsoleApp/RepositoryLayer/obj/Debug/net7.0/Reposito.A0A61804.Up2Date

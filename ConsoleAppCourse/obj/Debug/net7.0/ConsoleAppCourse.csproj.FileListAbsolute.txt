@@ -19,4 +19,5 @@
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ConsoleAppCourse.pdb
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ConsoleAppCourse.genruntimeconfig.cache
 /Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ref/ConsoleAppCourse.dll
-/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ConsoleAppCourse.csproj.CopyComplete
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ConsoleAppCourse.sourcelink.json
+/Users/aydansrifova/Desktop/ConsoleApp/ConsoleAppCourse/obj/Debug/net7.0/ConsoleA.B20B7975.Up2Date
