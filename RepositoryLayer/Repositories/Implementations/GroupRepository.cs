@@ -1,6 +1,5 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Repositories.Interfaces;
-using RepositoryLayer.Exceptions;
 using RepositoryLayer.Data;
 
 namespace RepositoryLayer.Repositories.Implementations
@@ -9,25 +8,45 @@ namespace RepositoryLayer.Repositories.Implementations
     {
         public void Create(Groups data)
         {
-            if (data is null) throw new NotFoundException("Data isn't found");
+            if (data == null)
+            {
+                throw new Exception("Group cannot be null");
+            }
+
             AppDbContext<Groups>.datas.Add(data);
         }
 
         public void Delete(Groups data)
         {
-            if (data is null) throw new NotFoundException("Data isn't found");
+            if (data == null)
+            {
+                throw new Exception("Group cannot be null");
+            }
 
-            Groups? existingData = AppDbContext<Groups>.datas.FirstOrDefault(m => m.Id == data.Id);
-            if (existingData is null) throw new NotFoundException("Group not found with this id");
+            int index = -1;
 
-            AppDbContext<Groups>.datas.Remove(existingData);
+            for (int i = 0; i < AppDbContext<Groups>.datas.Count; i++)
+            {
+                if (AppDbContext<Groups>.datas[i].Id == data.Id)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index == -1)
+            {
+                throw new Exception("Group not found");
+            }
+
+            AppDbContext<Groups>.datas.RemoveAt(index);
         }
 
         public List<Groups> GetAll(Predicate<Groups> predicate)
         {
-            if (predicate is null)
+            if (predicate == null)
             {
-                return AppDbContext<Groups>.datas.ToList();
+                return new List<Groups>(AppDbContext<Groups>.datas);
             }
 
             return AppDbContext<Groups>.datas.FindAll(predicate);
@@ -35,22 +54,36 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public Groups GetById(int id)
         {
-            Groups? data = AppDbContext<Groups>.datas.FirstOrDefault(m => m.Id == id);
-            if (data is null) throw new NotFoundException("Group not found with this id");
+            for (int i = 0; i < AppDbContext<Groups>.datas.Count; i++)
+            {
+                if (AppDbContext<Groups>.datas[i].Id == id)
+                {
+                    return AppDbContext<Groups>.datas[i];
+                }
+            }
 
-            return data;
+            throw new Exception("Group not found");
         }
 
         public void Update(Groups data)
         {
-            if (data is null) throw new NotFoundException("Data isn't found");
+            if (data == null)
+            {
+                throw new Exception("Group cannot be null");
+            }
 
-            Groups? existingData = AppDbContext<Groups>.datas.FirstOrDefault(m => m.Id == data.Id);
-            if (existingData is null) throw new NotFoundException("Group not found with this id");
+            for (int i = 0; i < AppDbContext<Groups>.datas.Count; i++)
+            {
+                if (AppDbContext<Groups>.datas[i].Id == data.Id)
+                {
+                    AppDbContext<Groups>.datas[i].Name = data.Name;
+                    AppDbContext<Groups>.datas[i].Teacher = data.Teacher;
+                    AppDbContext<Groups>.datas[i].Room = data.Room;
+                    return;
+                }
+            }
 
-            existingData.Name = data.Name;
-            existingData.Teacher = data.Teacher;
-            existingData.Room = data.Room;
+            throw new Exception("Group not found");
         }
     }
 }

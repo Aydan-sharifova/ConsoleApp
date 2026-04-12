@@ -7,24 +7,52 @@ namespace ServiceLayer.Services.Implementations
 {
     public class GroupService : IGroupService
     {
-        private readonly GroupRepository _groupRepository;
+        private GroupRepository _groupRepository;
         private int _count;
 
         public GroupService()
         {
             _groupRepository = new GroupRepository();
-            _count = AppDbContext<Groups>.datas.Count == 0
-                ? 1
-                : AppDbContext<Groups>.datas.Max(m => m.Id) + 1;
+            _count = GetNextId();
+        }
+
+        private int GetNextId()
+        {
+            List<Groups> groups = AppDbContext<Groups>.datas;
+
+            if (groups.Count == 0)
+            {
+                return 1;
+            }
+
+            int maxId = groups[0].Id;
+
+            for (int i = 1; i < groups.Count; i++)
+            {
+                if (groups[i].Id > maxId)
+                {
+                    maxId = groups[i].Id;
+                }
+            }
+
+            return maxId + 1;
+        }
+
+        private bool IsAnyGroup(Groups group)
+        {
+            return true;
         }
 
         public Groups Create(Groups group)
         {
-            ArgumentNullException.ThrowIfNull(group);
+            if (group == null)
+            {
+                throw new Exception("Group cannot be null");
+            }
 
             group.Id = _count;
             _groupRepository.Create(group);
-            _count++;
+            _count = _count + 1;
             return group;
         }
 
@@ -39,6 +67,11 @@ namespace ServiceLayer.Services.Implementations
             return _groupRepository.GetAll(predicate);
         }
 
+        public List<Groups> GetAll()
+        {
+            return _groupRepository.GetAll(IsAnyGroup);
+        }
+
         public Groups GetById(int id)
         {
             return _groupRepository.GetById(id);
@@ -46,6 +79,10 @@ namespace ServiceLayer.Services.Implementations
 
         public Groups Update(int id, Groups group)
         {
+            if (group == null)
+            {
+                throw new Exception("Group cannot be null");
+            }
 
             Groups dbGroup = _groupRepository.GetById(id);
 
@@ -59,14 +96,75 @@ namespace ServiceLayer.Services.Implementations
 
         public List<Groups> GetAllByTeacher(string teacher)
         {
-            return _groupRepository.GetAll(m =>
-                string.Equals(m.Teacher, teacher, StringComparison.OrdinalIgnoreCase));
+            if (teacher == null)
+            {
+                teacher = string.Empty;
+            }
+
+            List<Groups> groups = GetAll();
+            List<Groups> result = new List<Groups>();
+
+            for (int i = 0; i < groups.Count; i++)
+            {
+                if (groups[i].Teacher != null &&
+                    groups[i].Teacher.ToLower() == teacher.ToLower())
+                {
+                    result.Add(groups[i]);
+                }
+            }
+
+            return result;
         }
 
         public List<Groups> GetAllByRoom(string room)
         {
-            return _groupRepository.GetAll(m =>
-                string.Equals(m.Room, room, StringComparison.OrdinalIgnoreCase));
+            if (room == null)
+            {
+                room = string.Empty;
+            }
+
+            List<Groups> groups = GetAll();
+            List<Groups> result = new List<Groups>();
+
+            for (int i = 0; i < groups.Count; i++)
+            {
+                if (groups[i].Room != null &&
+                    groups[i].Room.ToLower() == room.ToLower())
+                {
+                    result.Add(groups[i]);
+                }
+            }
+
+            return result;
+        }
+
+        public List<Groups> SearchByName(string text)
+        {
+            if (text == null)
+            {
+                text = string.Empty;
+            }
+
+            List<Groups> groups = GetAll();
+            List<Groups> result = new List<Groups>();
+            string searchText = text.ToLower();
+
+            for (int i = 0; i < groups.Count; i++)
+            {
+                string groupName = string.Empty;
+
+                if (groups[i].Name != null)
+                {
+                    groupName = groups[i].Name.ToLower();
+                }
+
+                if (groupName.Contains(searchText))
+                {
+                    result.Add(groups[i]);
+                }
+            }
+
+            return result;
         }
     }
 }

@@ -8,8 +8,10 @@ namespace ServiceLayer.Services.Interfaces
         Groups Update(int id, Groups group);
         void Delete(int id);
         Groups GetById(int id);
+        List<Groups> GetAll();
         List<Groups> GetAll(Predicate<Groups> predicate);
         List<Groups> GetAllByTeacher(string teacher);
         List<Groups> GetAllByRoom(string room);
+        List<Groups> SearchByName(string text);
     }
 }
