@@ -1,5 +1,6 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Data;
+using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Implementations;
 using ServiceLayer.Services.Interfaces;
 
@@ -49,7 +50,7 @@ namespace ServiceLayer.Services.Implementations
         {
             if (student == null)
             {
-                throw new Exception("Student cannot be null");
+                throw new StudentNullException("Student cannot be null");
             }
 
             Groups group = _groupService.GetById(student.GroupId);
@@ -65,7 +66,7 @@ namespace ServiceLayer.Services.Implementations
         {
             if (student == null)
             {
-                throw new Exception("Student cannot be null");
+                throw new StudentNullException("Student cannot be null");
             }
 
             Student dbStudent = _studentRepository.GetById(id);

@@ -1,6 +1,7 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Repositories.Interfaces;
 using RepositoryLayer.Data;
+using RepositoryLayer.Exceptions;
 
 namespace RepositoryLayer.Repositories.Implementations
 {
@@ -10,7 +11,7 @@ namespace RepositoryLayer.Repositories.Implementations
         {
             if (data == null)
             {
-                throw new Exception("Group cannot be null");
+                throw new GroupNullException("Group cannot be null");
             }
 
             AppDbContext<Groups>.datas.Add(data);
@@ -20,7 +21,7 @@ namespace RepositoryLayer.Repositories.Implementations
         {
             if (data == null)
             {
-                throw new Exception("Group cannot be null");
+                throw new GroupNullException("Group cannot be null");
             }
 
             int index = -1;
@@ -36,7 +37,7 @@ namespace RepositoryLayer.Repositories.Implementations
 
             if (index == -1)
             {
-                throw new Exception("Group not found");
+                throw new GroupNotFoundException("Group not found");
             }
 
             AppDbContext<Groups>.datas.RemoveAt(index);
@@ -62,14 +63,14 @@ namespace RepositoryLayer.Repositories.Implementations
                 }
             }
 
-            throw new Exception("Group not found");
+            throw new GroupNotFoundException("Group not found");
         }
 
         public void Update(Groups data)
         {
             if (data == null)
             {
-                throw new Exception("Group cannot be null");
+                throw new GroupNullException("Group cannot be null");
             }
 
             for (int i = 0; i < AppDbContext<Groups>.datas.Count; i++)
@@ -83,7 +84,7 @@ namespace RepositoryLayer.Repositories.Implementations
                 }
             }
 
-            throw new Exception("Group not found");
+            throw new GroupNotFoundException("Group not found");
         }
     }
 }

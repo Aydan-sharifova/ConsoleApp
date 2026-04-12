@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{CBAF2504-6D54-4B76-9081-BFACFA437B8F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../ServiceLayer/Services/Implementations/GroupService.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../ServiceLayer/Services/Implementations/StudentService.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="../RepositoryLayer/Repositories/Implementations/GroupRepository.cs" Line="1" Column="1" />
       <File FileName="../RepositoryLayer/Exceptions/NotFoundException.cs" Line="1" Column="1" />
       <File FileName="../RepositoryLayer/Repositories/Interfaces/IRepository.cs" Line="1" Column="1" />
-      <File FileName="../ServiceLayer/Services/Implementations/GroupService.cs" Line="50" Column="39" />
+      <File FileName="../ServiceLayer/Services/Implementations/GroupService.cs" Line="53" Column="1" />
       <File FileName="../DomainLayer/Entities/Student.cs" Line="1" Column="1" />
       <File FileName="../DomainLayer/Entities/Groups.cs" Line="1" Column="1" />
       <File FileName="Helpers/Helper.cs" Line="1" Column="1" />
+      <File FileName="../ServiceLayer/Services/Interfaces/IGroupService.cs" Line="1" Column="1" />
+      <File FileName="../DomainLayer/Common/BaseEntity.cs" Line="1" Column="1" />
+      <File FileName="../ServiceLayer/Services/Implementations/StudentService.cs" Line="39" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,10 +20,6 @@
           <Node name="ConsoleAppCourse" expanded="True">
             <Node name="ConsoleAppCourse" expanded="True">
               <Node name="Helpers" expanded="True" />
-            </Node>
-            <Node name="DomainLayer" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Entities" expanded="True" />
             </Node>
             <Node name="RepositoryLayer" expanded="True">
               <Node name="Repositories" expanded="True">
@@ -29,7 +29,10 @@
             </Node>
             <Node name="ServiceLayer" expanded="True">
               <Node name="Services" expanded="True">
-                <Node name="Implementations" expanded="True" />
+                <Node name="Implementations" expanded="True">
+                  <Node name="StudentService.cs" selected="True" />
+                </Node>
+                <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -37,11 +40,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.ConsoleAppCourse PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

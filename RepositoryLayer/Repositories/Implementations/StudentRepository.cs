@@ -1,5 +1,6 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Data;
+using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Interfaces;
 
 namespace RepositoryLayer.Repositories.Implementations
@@ -10,7 +11,7 @@ namespace RepositoryLayer.Repositories.Implementations
         {
             if (data == null)
             {
-                throw new Exception("Student cannot be null");
+                throw new StudentNullException("Student cannot be null");
             }
 
             AppDbContext<Student>.datas.Add(data);
@@ -20,7 +21,7 @@ namespace RepositoryLayer.Repositories.Implementations
         {
             if (data == null)
             {
-                throw new Exception("Student cannot be null");
+                throw new StudentNullException("Student cannot be null");
             }
 
             for (int i = 0; i < AppDbContext<Student>.datas.Count; i++)
@@ -36,14 +37,14 @@ namespace RepositoryLayer.Repositories.Implementations
                 }
             }
 
-            throw new Exception("Student not found");
+            throw new StudentNotFoundException("Student not found");
         }
 
         public void Delete(Student data)
         {
             if (data == null)
             {
-                throw new Exception("Student cannot be null");
+                throw new StudentNullException("Student cannot be null");
             }
 
             int index = -1;
@@ -59,7 +60,7 @@ namespace RepositoryLayer.Repositories.Implementations
 
             if (index == -1)
             {
-                throw new Exception("Student not found");
+                throw new StudentNotFoundException("Student not found");
             }
 
             AppDbContext<Student>.datas.RemoveAt(index);
@@ -75,7 +76,7 @@ namespace RepositoryLayer.Repositories.Implementations
                 }
             }
 
-            throw new Exception("Student not found");
+            throw new StudentNotFoundException("Student not found");
         }
 
         public List<Student> GetAll(Predicate<Student> predicate)

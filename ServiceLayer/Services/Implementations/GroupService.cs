@@ -1,5 +1,6 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Data;
+using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Implementations;
 using ServiceLayer.Services.Interfaces;
 
@@ -47,7 +48,7 @@ namespace ServiceLayer.Services.Implementations
         {
             if (group == null)
             {
-                throw new Exception("Group cannot be null");
+                throw new GroupNullException("Group cannot be null");
             }
 
             group.Id = _count;
@@ -81,7 +82,7 @@ namespace ServiceLayer.Services.Implementations
         {
             if (group == null)
             {
-                throw new Exception("Group cannot be null");
+                throw new GroupNullException("Group cannot be null");
             }
 
             Groups dbGroup = _groupRepository.GetById(id);
