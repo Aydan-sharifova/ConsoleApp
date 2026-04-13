@@ -17,10 +17,7 @@
       },
       "DomainLayer/1.0.0": {
         "runtime": {
-          "DomainLayer.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DomainLayer.dll": {}
         }
       },
       "RepositoryLayer/1.0.0": {
@@ -28,10 +25,7 @@
           "DomainLayer": "1.0.0"
         },
         "runtime": {
-          "RepositoryLayer.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "RepositoryLayer.dll": {}
         }
       },
       "ServiceLayer/1.0.0": {
@@ -40,10 +34,7 @@
           "RepositoryLayer": "1.0.0"
         },
         "runtime": {
-          "ServiceLayer.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ServiceLayer.dll": {}
         }
       }
     }

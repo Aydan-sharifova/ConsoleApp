@@ -44,12 +44,51 @@ namespace ServiceLayer.Services.Implementations
             return true;
         }
 
-        public Groups Create(Groups group)
+        private void ValidateGroup(Groups group)
         {
             if (group == null)
             {
                 throw new GroupNullException("Group cannot be null");
             }
+
+            if (string.IsNullOrWhiteSpace(group.Name))
+            {
+                throw new GroupNameRequiredException("Group name is required");
+            }
+
+
+            if (string.IsNullOrWhiteSpace(group.Teacher))
+            {
+                throw new GroupTeacherRequiredException("Group teacher is required");
+            }
+
+            if (ContainsNumber(group.Teacher))
+            {
+                throw new GroupTeacherValidationException("Teacher name cannot contain numbers");
+            }
+
+            if (string.IsNullOrWhiteSpace(group.Room))
+            {
+                throw new GroupRoomRequiredException("Group room is required");
+            }
+        }
+
+        private bool ContainsNumber(string text)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (char.IsDigit(text[i]))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public Groups Create(Groups group)
+        {
+            ValidateGroup(group);
 
             group.Id = _count;
             _groupRepository.Create(group);
@@ -80,10 +119,7 @@ namespace ServiceLayer.Services.Implementations
 
         public Groups Update(int id, Groups group)
         {
-            if (group == null)
-            {
-                throw new GroupNullException("Group cannot be null");
-            }
+            ValidateGroup(group);
 
             Groups dbGroup = _groupRepository.GetById(id);
 

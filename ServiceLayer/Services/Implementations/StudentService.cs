@@ -46,12 +46,60 @@ namespace ServiceLayer.Services.Implementations
             return true;
         }
 
-        public Student Create(Student student)
+        private void ValidateStudent(Student student)
         {
             if (student == null)
             {
                 throw new StudentNullException("Student cannot be null");
             }
+
+            if (string.IsNullOrWhiteSpace(student.Name))
+            {
+                throw new StudentNameRequiredException("Student name is required");
+            }
+
+            if (ContainsNumber(student.Name))
+            {
+                throw new StudentNameValidationException("Student name cannot contain numbers");
+            }
+
+            if (string.IsNullOrWhiteSpace(student.Surname))
+            {
+                throw new StudentSurnameRequiredException("Student surname is required");
+            }
+
+            if (ContainsNumber(student.Surname))
+            {
+                throw new StudentSurnameValidationException("Student surname cannot contain numbers");
+            }
+
+            if (student.Age < 18)
+            {
+                throw new StudentAgeValidationException("Student age cannot be less than 18");
+            }
+
+            if (student.GroupId <= 0)
+            {
+                throw new StudentGroupIdValidationException("Group id must be greater than 0");
+            }
+        }
+
+        private bool ContainsNumber(string text)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (char.IsDigit(text[i]))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public Student Create(Student student)
+        {
+            ValidateStudent(student);
 
             Groups group = _groupService.GetById(student.GroupId);
 
@@ -64,10 +112,7 @@ namespace ServiceLayer.Services.Implementations
 
         public Student Update(int id, Student student)
         {
-            if (student == null)
-            {
-                throw new StudentNullException("Student cannot be null");
-            }
+            ValidateStudent(student);
 
             Student dbStudent = _studentRepository.GetById(id);
             Groups group = _groupService.GetById(student.GroupId);
@@ -86,6 +131,11 @@ namespace ServiceLayer.Services.Implementations
         {
             Student student = _studentRepository.GetById(id);
             _studentRepository.Delete(student);
+        }
+
+        public void RemoveAll()
+        {
+            _studentRepository.RemoveAll();
         }
 
         public Student GetById(int id)

@@ -88,5 +88,10 @@ namespace RepositoryLayer.Repositories.Implementations
 
             return AppDbContext<Student>.datas.FindAll(predicate);
         }
+
+        public void RemoveAll()
+        {
+            AppDbContext<Student>.datas.Clear();
+        }
     }
 }
